@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <table class="table">
+              <caption>Season avarage: {{calcularPromedioSeasons()}}</caption>
+              <thead>
+                 <tr>
+                    <th scope="col" width="10px"><b>#</b></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Seasons</th>
+                 </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let s of getSeries()">
+                  <td>
+                    <dd>{{s.id}}</dd>
+                  </td>
+                  <td>
+                    <dd>{{s.name}}</dd>
+                  </td>
+                  <td>
+                    <dd>{{s.channel}}</dd>
+                  </td>
+                  <td>
+                    <dd>{{s.seasons}}</dd>
+                  </td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+
+  </div>
+</div>
+
+
